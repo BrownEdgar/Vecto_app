@@ -1,1 +1,6 @@
-export type { IMovieFeatured, IMovieTrending, moviesInitialState, IFetchMoviesResponse } from './interfaces';
+export type {
+  IMovieFeatured,
+  IMovieTrending,
+  moviesInitialState,
+  IFetchMoviesResponse,
+} from './interfaces'

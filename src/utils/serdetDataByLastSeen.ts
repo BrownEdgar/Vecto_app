@@ -1,9 +1,12 @@
-import { IMovieTrending } from '@/types';
+import { IMovieTrending } from '@/types'
 
-export const serdetDataByLastSeen = (data: IMovieTrending[], lastSeenId: string | null) => {
+export const serdetDataByLastSeen = (
+  data: IMovieTrending[],
+  lastSeenId: string | null
+) => {
   return data.toSorted((a, b) => {
-    if (a.Id === lastSeenId) return -1;
-    if (b.Id === lastSeenId) return 1;
-    return 0;
+    if (a.Id === lastSeenId) return -1
+    if (b.Id === lastSeenId) return 1
+    return 0
   })
 }

@@ -21,7 +21,9 @@
     padding-top: 0;
     overflow-y: hidden;
     padding-left: 157px;
-    box-shadow: rgba(0, 0, 0, 0.689) 0px -30px 38px, rgba(0, 0, 0, 0.463) 1px -40px 32px;
+    box-shadow:
+      rgba(0, 0, 0, 0.689) 0px -30px 38px,
+      rgba(0, 0, 0, 0.463) 1px -40px 32px;
     &::-webkit-scrollbar {
       display: inline-block;
       // display: none; տակի scroll-ը թաքցնելու համար

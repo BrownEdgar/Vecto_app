@@ -22,7 +22,7 @@
       "MpaRating": "18+",
       "Category": "Movie",
       "Duration": "2000",
-      "VideoUrl": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4",
+      "VideoUrl": "https://video-previews.elements.envatousercontent.com/h264-video-previews/1a21676a-4455-4735-9df3-39d952f3c7d9/56242036.mp4",
       "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
     },
     {
@@ -235,16 +235,16 @@
     },
     {
       "Id": "18",
-      "Title": "Title 18",
+      "Title": "San Andreas",
       "CoverImage": "https_specials-2.png",
       "TitleImage": "FeaturedTitleImage.png",
-      "Date": "2021-07-21T12:16:50.894556",
+      "Date": "2021-10-12T12:16:50.894556",
       "ReleaseYear": "2021",
       "MpaRating": "18+",
       "Category": "TV Show",
-      "Duration": "1200",
+      "Duration": "2300",
       "VideoUrl": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "After a massive earthquake hits California, a rescue-chopper pilot embarks on a dangerous mission to save his daughter amidst widespread destruction."
     }
   ]
 }

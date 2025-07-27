@@ -41,12 +41,6 @@
     &-Play {
       background-color: #f1f1f1;
       color: #0c0c0c;
-      &::before {
-        content: '►';
-        position: relative;
-        right: 10px;
-        font-size: 24px;
-      }
       &:active {
         background-color: #00b894;
         scale: 0.98;
@@ -55,7 +49,8 @@
     &-Info {
       color: #f1f1f1;
       background-color: #2727f5;
-      background: transparent linear-gradient(128deg, #2727f5 0%, #001671 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(128deg, #2727f5 0%, #001671 100%)
+        0% 0% no-repeat padding-box;
       border-radius: 40px;
       &:active {
         background-color: #465da3;

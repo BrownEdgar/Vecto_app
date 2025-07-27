@@ -1,30 +1,29 @@
 export interface IMovieFeatured {
-  Id: string;
-  Title: string;
-  CoverImage: string;
-  TitleImage: string;
-  Date: string;
-  ReleaseYear: string;
-  MpaRating: string;
-  Category: string;
-  Duration: string;
-  Description: string;
+  Id: string
+  Title: string
+  CoverImage: string
+  TitleImage: string
+  Date: string
+  ReleaseYear: string
+  MpaRating: string
+  Category: string
+  Duration: string
+  Description: string
   lastClick?: string
 }
 
 export interface IMovieTrending extends IMovieFeatured {
-  VideoUrl: string;
+  VideoUrl: string
 }
 
 export interface IFetchMoviesResponse {
-  Featured?: IMovieFeatured | IMovieTrending;
-  TendingNow?: IMovieTrending[];
+  Featured?: IMovieFeatured | IMovieTrending
+  TendingNow?: IMovieTrending[]
 }
 
-
 export interface moviesInitialState {
-  data: IFetchMoviesResponse,
-  error: null | { message: string },
+  data: IFetchMoviesResponse
+  error: null | { message: string }
   loading: boolean
 }
 
@@ -35,6 +34,6 @@ export interface SidebarLink {
 
 // forr middlewares
 export interface SetFeatureAction {
-  type: string;
-  payload: IMovieFeatured;
+  type: string
+  payload: IMovieFeatured
 }

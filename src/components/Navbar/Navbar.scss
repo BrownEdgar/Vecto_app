@@ -44,7 +44,12 @@
       bottom: 0;
       left: 100%;
       width: 110%;
-      background-image: linear-gradient(90deg, hsl(0, 0%, 0%) 10%, hsla(0, 0%, 0%, 0.488) 70%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(
+        90deg,
+        hsl(0, 0%, 0%) 10%,
+        hsla(0, 0%, 0%, 0.488) 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
       z-index: -1;
     }
   }

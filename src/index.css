@@ -8,20 +8,22 @@ body {
   max-width: 1900px;
   background-color: #000;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-wrap: balance;
 }
 

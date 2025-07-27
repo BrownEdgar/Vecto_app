@@ -3,18 +3,10 @@
     "baseUrl": "src",
     "noEmit": true,
     "paths": {
-      "@/*": [
-        "*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ]
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@assets/*": ["assets/*"]
     },
     "jsx": "react-jsx",
     "module": "ESNext",
@@ -25,8 +17,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": [
-    "src",
-    "src/types"
-  ]
+  "include": ["src", "src/types"]
 }
