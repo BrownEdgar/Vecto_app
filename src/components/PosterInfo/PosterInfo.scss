@@ -1,0 +1,61 @@
+.PosterInfo {
+  color: #fff;
+  margin-left: 150px;
+  width: calc(50% - 40px);
+
+  &__Text {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  &__Time {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__Title {
+    font-family: 'Anton', sans-serif;
+    font-size: 7em;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  &__Buttons {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    button {
+      font-weight: 600;
+      border: 0;
+      border-radius: 30px;
+      font-size: 24px;
+      padding: 1.2rem 2rem;
+      cursor: pointer;
+      width: 210px;
+      transition: 0.1s;
+    }
+    &-Play {
+      background-color: #f1f1f1;
+      color: #060606;
+      &::before {
+        content: '►';
+        position: relative;
+        right: 10px;
+        font-size: 24px;
+      }
+      &:active {
+        background-color: #00b894;
+        scale: 0.98;
+      }
+    }
+    &-Info {
+      color: #ecf0f1;
+      background-color: #091a92;
+      &:active {
+        background-color: #465da3;
+        scale: 0.98;
+      }
+    }
+  }
+}
