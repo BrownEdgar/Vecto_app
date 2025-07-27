@@ -9,7 +9,7 @@
     "MpaRating": "18+",
     "Category": "Movie",
     "Duration": "6000",
-    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+    "Description": "An aging hitman reflects on his past involvement with the mob and the disappearance of his friend Jimmy Hoffa in this epic crime drama directed by Martin Scorsese."
   },
   "TendingNow": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "Id": "2",
-      "Title": "Title 2",
+      "Title": "San Andreas",
       "CoverImage": "https_specials-2.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-10-12T12:16:50.894556",
@@ -36,11 +36,11 @@
       "Category": "TV Show",
       "Duration": "2300",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "After a massive earthquake hits California, a rescue-chopper pilot embarks on a dangerous mission to save his daughter amidst widespread destruction."
     },
     {
       "Id": "3",
-      "Title": "Title 3",
+      "Title": "good Doctor",
       "CoverImage": "https_specials-3.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-10-11T12:16:50.894556",
@@ -49,11 +49,11 @@
       "Category": "Movie",
       "Duration": "6000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "A young autistic surgeon with savant syndrome joins a prestigious hospital’s surgical unit, where he must prove himself to skeptical colleagues."
     },
     {
       "Id": "4",
-      "Title": "Title 4",
+      "Title": "Red Notice",
       "CoverImage": "https_specials-4.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-10-10T12:16:50.894556",
@@ -62,7 +62,7 @@
       "Category": "Movie",
       "Duration": "4000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "An FBI profiler reluctantly teams up with a notorious art thief to catch an even more elusive criminal in this action-packed comedy thriller."
     },
     {
       "Id": "5",
@@ -79,7 +79,7 @@
     },
     {
       "Id": "6",
-      "Title": "Title 6",
+      "Title": "Hannibal",
       "CoverImage": "https_specials-6.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-10-22T12:16:50.894556",
@@ -88,11 +88,11 @@
       "Category": "TV Show",
       "Duration": "1200",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "A gifted FBI profiler is drawn into the twisted world of Dr. Hannibal Lecter, a brilliant psychiatrist with a dark secret, in this psychological horror series."
     },
     {
       "Id": "7",
-      "Title": "Title 7",
+      "Title": "Sherlock",
       "CoverImage": "https_specials-7.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-11-22T12:16:50.894556",
@@ -105,7 +105,7 @@
     },
     {
       "Id": "8",
-      "Title": "Title 8",
+      "Title": "Kate",
       "CoverImage": "https_specials-8.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-07-14T12:16:50.894556",
@@ -114,7 +114,7 @@
       "Category": "TV Show",
       "Duration": "2000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "After being poisoned, a ruthless assassin has less than 24 hours to exact revenge on her enemies while forming an unlikely bond with the daughter of one of her victims."
     },
     {
       "Id": "9",
@@ -131,7 +131,7 @@
     },
     {
       "Id": "10",
-      "Title": "Title 10",
+      "Title": "San Andreas",
       "CoverImage": "https_specials-2.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-11-23T12:16:50.894556",
@@ -140,11 +140,11 @@
       "Category": "Movie",
       "Duration": "6000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "After a massive earthquake hits California, a rescue-chopper pilot embarks on a dangerous mission to save his daughter amidst widespread destruction."
     },
     {
       "Id": "11",
-      "Title": "Title 11",
+      "Title": "good Doctor",
       "CoverImage": "https_specials-3.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-11-04T12:16:50.894556",
@@ -153,11 +153,11 @@
       "Category": "TV Show",
       "Duration": "1200",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "A young autistic surgeon with savant syndrome joins a prestigious hospital’s surgical unit, where he must prove himself to skeptical colleagues."
     },
     {
       "Id": "12",
-      "Title": "Title 12",
+      "Title": "Red Notice",
       "CoverImage": "https_specials-4.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-03-03T12:16:50.894556",
@@ -166,7 +166,7 @@
       "Category": "Movie",
       "Duration": "3400",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "An FBI profiler reluctantly teams up with a notorious art thief to catch an even more elusive criminal in this action-packed comedy thriller."
     },
     {
       "Id": "13",
@@ -183,7 +183,7 @@
     },
     {
       "Id": "14",
-      "Title": "Title 14",
+      "Title": "Hannibal",
       "CoverImage": "https_specials-6.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-07-10T12:16:50.894556",
@@ -192,11 +192,11 @@
       "Category": "Movie",
       "Duration": "5000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "A gifted FBI profiler is drawn into the twisted world of Dr. Hannibal Lecter, a brilliant psychiatrist with a dark secret, in this psychological horror series."
     },
     {
       "Id": "15",
-      "Title": "Title 15",
+      "Title": "Sherlock",
       "CoverImage": "https_specials-7.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-05-14T12:16:50.894556",
@@ -209,7 +209,7 @@
     },
     {
       "Id": "16",
-      "Title": "Title 16",
+      "Title": "Kate",
       "CoverImage": "https_specials-8.png",
       "TitleImage": "FeaturedTitleImage.png",
       "Date": "2021-03-25T12:16:50.894556",
@@ -218,7 +218,7 @@
       "Category": "Movie",
       "Duration": "5000",
       "VideoUrl": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem praesentium explicabo ullam? Numquam similique nihil facilis laboriosam odio. Quidem molestias nihil maxime distinctio quo, amet repellat id nesciunt placeat."
+      "Description": "After being poisoned, a ruthless assassin has less than 24 hours to exact revenge on her enemies while forming an unlikely bond with the daughter of one of her victims."
     },
     {
       "Id": "17",

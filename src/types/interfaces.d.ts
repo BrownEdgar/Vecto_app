@@ -1,5 +1,3 @@
-import { ReactNode } from 'react'
-
 export interface IMovieFeatured {
   Id: string;
   Title: string;
@@ -11,6 +9,7 @@ export interface IMovieFeatured {
   Category: string;
   Duration: string;
   Description: string;
+  lastClick?: string
 }
 
 export interface IMovieTrending extends IMovieFeatured {
@@ -29,9 +28,13 @@ export interface moviesInitialState {
   loading: boolean
 }
 
-
-
 export interface SidebarLink {
   label: string
   icon: string
+}
+
+// forr middlewares
+export interface SetFeatureAction {
+  type: string;
+  payload: IMovieFeatured;
 }

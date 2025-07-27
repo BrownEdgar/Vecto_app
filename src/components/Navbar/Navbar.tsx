@@ -41,27 +41,34 @@ const Navbar = ({ toggleNavbar, setToggleNavbar }: INavbar) => {
         <div className='username'>Sebastian</div>
 
         <nav className='nav'>
+
           {sidebarLinks.map((link) => (
             <div
               key={link.label}
-              className={`nav__item ${activeItem === link.label ? "nav__item-active" : ""}`}
+              className={`
+              nav__item  ${activeItem === link.label ? "nav__item-active" : ""} ${!toggleNavbar ? "nav__item-circle" : ""}
+            `}
               onClick={() => handleSwitchMenu(link.label)}
             >
               <img src={link.icon} alt={link.label} />
-              <span>{link.label}</span>
+              {toggleNavbar && <span>{link.label}</span>}
             </div>
           ))}
         </nav>
-      </div>
+      </div >
 
-      <div className='Navbar__Bottom'>
-        {bottomLinks.map((label) => (
-          <div key={label} className='bottomItem'>
-            <Link to='#'>{label}</Link>
+      {
+        toggleNavbar ? (
+          <div className='Navbar__Bottom'>
+            {bottomLinks.map((label) => (
+              <div key={label} className='bottomItem'>
+                <Link to='#'>{label}</Link>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        ) : null
+      }
+    </div >
   )
 }
 

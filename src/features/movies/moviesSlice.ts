@@ -1,7 +1,8 @@
 
 import { IFetchMoviesResponse, IMovieFeatured, moviesInitialState } from '@/types/interfaces.d';
-import { buildCreateSlice, asyncThunkCreator, PayloadAction, ReducerCreators } from '@reduxjs/toolkit'
+import { buildCreateSlice, asyncThunkCreator, PayloadAction } from '@reduxjs/toolkit'
 import { fetchMovies } from './moviesAPI';
+import { serdetDataByLastSeen } from '@/utils/serdetDataByLastSeen';
 
 const createMoviesSlice = buildCreateSlice({
   creators: { asyncThunk: asyncThunkCreator },
@@ -20,7 +21,9 @@ export const moviesSlice = createMoviesSlice({
   reducers: (create) => ({
     fetchTodo: create.asyncThunk(
       async () => {
-        const data = await fetchMovies();
+        const data: IFetchMoviesResponse = await fetchMovies();
+        const lastSeenId = sessionStorage.getItem('lastSeenMovieId');
+        data.TendingNow = serdetDataByLastSeen(data.TendingNow!, lastSeenId)
         return data;
       },
       {
@@ -41,6 +44,8 @@ export const moviesSlice = createMoviesSlice({
     ),
     setFeature: create.reducer(
       (state, action: PayloadAction<IMovieFeatured>) => {
+        console.log("actionP", action.payload);
+
         state.data.Featured = action.payload;
       }
     )

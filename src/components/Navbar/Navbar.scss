@@ -7,23 +7,23 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 100px;
+  width: 90px;
   height: 100vh;
-  padding: 1rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 3rem 1rem;
   transition: width 0.2s;
-  overflow: hidden;
   z-index: 999;
 
   &-active {
-    width: 340px;
+    padding: 1rem 2rem 3rem 2rem;
+    width: 300px;
     &:before {
       content: '';
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 80%;
+      left: 100%;
       width: 110%;
-      background-image: linear-gradient(90deg, hsl(0, 0%, 0%) 20%, hsla(0, 0%, 0%, 0.241) 80%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(90deg, hsl(0, 0%, 0%) 10%, hsla(0, 0%, 0%, 0.488) 70%, rgba(0, 0, 0, 0) 100%);
       z-index: -1;
     }
   }
@@ -70,11 +70,19 @@
     align-items: center;
     padding: 12px;
     cursor: pointer;
-
+    transition: background 0.2s;
     &-active {
       background: #3b486d;
       border-radius: 12px;
-      transition: background 0.2s;
+      transition: 0.2s;
+    }
+
+    &-circle {
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
     }
     & > span {
       font-size: 24px;

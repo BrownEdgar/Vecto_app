@@ -3,7 +3,7 @@
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import './SliderRow.scss'
 import { getTrendingMovies, setFeature } from '@/features/movies/moviesSlice';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { IMovieFeatured } from '@/types';
 
 
@@ -11,6 +11,8 @@ import { IMovieFeatured } from '@/types';
 function SliderRow() {
   const trandingMovies = useAppSelector(getTrendingMovies)
   const dispath = useAppDispatch()
+  const [timeOutId, setTimeOutId] = useState<ReturnType<typeof setTimeout> | null>(null);
+  const [currentMovieId, setCurrentMovieId] = useState<string | null>(null);
   const elRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -29,8 +31,17 @@ function SliderRow() {
       element.removeEventListener('wheel', onWheel)
     };
   }, []);
+
   const changePoster = (movie: IMovieFeatured) => {
-    dispath(setFeature(movie))
+    setCurrentMovieId(movie.Id)
+
+    if (timeOutId && currentMovieId !== movie.Id) {
+      clearTimeout(timeOutId)
+    }
+    const timer = setTimeout(() => {
+      dispath(setFeature(movie))
+    }, 2000)
+    setTimeOutId(timer)
   }
 
   return (
