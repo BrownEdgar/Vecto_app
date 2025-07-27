@@ -1,0 +1,25 @@
+.ErrorPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 16px;
+  color: #f2f2f2;
+  a {
+    border: 2px dashed rgb(165, 23, 42);
+    border-radius: 4px;
+    padding: 0.6rem;
+    font-size: 18px;
+    &:hover {
+      background: rgb(17, 188, 60);
+      border: 0;
+      transition: 0.2s;
+    }
+  }
+}
