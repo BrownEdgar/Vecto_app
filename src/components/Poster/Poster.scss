@@ -8,30 +8,4 @@
     padding-top: 200px;
     height: 100%;
   }
-  &__video {
-    position: absolute;
-    inset: 0 0 0 auto;
-    object-fit: cover;
-    height: 100%;
-    width: 70%;
-    z-index: 9;
-    &::before {
-      content: 'dsasa';
-      width: 300px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #000;
-      z-index: 1;
-    }
-
-    &-hide {
-      visibility: hidden;
-      user-select: none;
-      opacity: 0;
-      z-index: -1;
-    }
-  }
 }

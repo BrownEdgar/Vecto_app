@@ -5,10 +5,14 @@ import { secondsToHoursAndMinutes } from '@/utils/secondsToHoursAndMinutes'
 
 interface IPosterInfo {
   movie: IMovieFeatured | undefined
-  isPlaying: boolean,
+  isPlaying: boolean
   togglePlaying: () => void
 }
-function PosterInfo({ movie, isPlaying, togglePlaying }: IPosterInfo): JSX.Element {
+function PosterInfo({
+  movie,
+  isPlaying,
+  togglePlaying,
+}: IPosterInfo): JSX.Element {
   return (
     <div className="PosterInfo">
       <div className="PosterInfo__content">
@@ -20,11 +24,8 @@ function PosterInfo({ movie, isPlaying, togglePlaying }: IPosterInfo): JSX.Eleme
         </ul>
         <p className="PosterInfo__Text">{movie?.Description}</p>
         <div className="PosterInfo__Buttons">
-          <button
-            className="PosterInfo__Buttons-Play"
-            onClick={togglePlaying}
-          >
-            {isPlaying ? "⏹︎ Stop" : "► Play"}
+          <button className="PosterInfo__Buttons-Play" onClick={togglePlaying}>
+            {isPlaying ? '⏹︎ Stop' : '► Play'}
           </button>
           <button className="PosterInfo__Buttons-Info">More info</button>
         </div>

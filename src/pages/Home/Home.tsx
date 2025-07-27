@@ -35,7 +35,11 @@ export default function Home() {
     <div className="wrapper">
       <main className="main">
         <Navbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
-        <Poster isPlaying={isPlaying} videoRef={videoRef} togglePlaying={togglePlaying} />
+        <Poster
+          isPlaying={isPlaying}
+          videoRef={videoRef}
+          togglePlaying={togglePlaying}
+        />
         <SliderRow togglePlaying={togglePlaying} isPlaying={isPlaying} />
       </main>
     </div>

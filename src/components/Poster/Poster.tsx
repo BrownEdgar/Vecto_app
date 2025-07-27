@@ -2,9 +2,9 @@ import { JSX, RefObject, useEffect } from 'react'
 import './Poster.scss'
 import { useAppSelector } from '@/app/hooks'
 import { getFeaturedMovie } from '@/features/movies/moviesSlice'
-import PosterInfo from '../PosterInfo/PosterInfo'
+import PosterInfo from '@components/PosterInfo/PosterInfo'
 import { IMovieTrending } from '@/types'
-import PosterVideo from './PosterVideo'
+import PosterVideo from './PosterVideo/PosterVideo'
 
 interface IPosterProps {
   isPlaying: boolean
@@ -12,7 +12,11 @@ interface IPosterProps {
   togglePlaying: () => void
 }
 
-function Poster({ isPlaying, videoRef, togglePlaying }: IPosterProps): JSX.Element {
+function Poster({
+  isPlaying,
+  videoRef,
+  togglePlaying,
+}: IPosterProps): JSX.Element {
   const selectedMovie = useAppSelector(getFeaturedMovie)!
   const bgImage = `./images/FeaturedCoverImage.png`
 
@@ -41,7 +45,6 @@ function Poster({ isPlaying, videoRef, togglePlaying }: IPosterProps): JSX.Eleme
         <PosterVideo
           isPlaying={isPlaying}
           videoRef={videoRef}
-
           videoUrl={(selectedMovie as IMovieTrending)?.VideoUrl}
         />
       </div>
