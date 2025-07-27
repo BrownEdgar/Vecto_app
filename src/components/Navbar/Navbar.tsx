@@ -20,7 +20,7 @@ const Navbar = ({ toggleNavbar, setToggleNavbar }: INavbar) => {
   const navbarRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const navbarWrapper = navbarRef.current;
-    const handleClick = (e) => {
+    const handleClick = (e: MouseEvent) => {
       const condition = !!navbarWrapper && navbarWrapper.contains(e.target as Node)
       setToggleNavbar(() => condition);
     }
@@ -33,12 +33,15 @@ const Navbar = ({ toggleNavbar, setToggleNavbar }: INavbar) => {
   return (
     <div className={`Navbar ${toggleNavbar ? 'Navbar-active' : ''}`} ref={navbarRef}>
       <div className='Navbar__topSection'>
-        <img
-          src="https://i.pravatar.cc/100?img=12"
-          alt="avatar"
-          className='avatar'
-        />
-        <div className='username'>Sebastian</div>
+
+        <div className={`Navbar__User ${!toggleNavbar ? 'Navbar__User-hide' : ''}`}>
+          <img
+            src="https://i.pravatar.cc/100?img=12"
+            alt="avatar"
+            className='avatar'
+          />
+          <p className='username'>Sebastian</p>
+        </div>
 
         <nav className='nav'>
 

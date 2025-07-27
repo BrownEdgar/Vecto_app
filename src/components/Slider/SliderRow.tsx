@@ -6,9 +6,11 @@ import { getTrendingMovies, setFeature } from '@/features/movies/moviesSlice';
 import { useEffect, useRef, useState } from 'react';
 import { IMovieFeatured } from '@/types';
 
+interface ISliderRowProps {
+  togglePlaying: () => void
+}
 
-
-function SliderRow() {
+function SliderRow({ togglePlaying }: ISliderRowProps) {
   const trandingMovies = useAppSelector(getTrendingMovies)
   const dispath = useAppDispatch()
   const [timeOutId, setTimeOutId] = useState<ReturnType<typeof setTimeout> | null>(null);
@@ -40,6 +42,7 @@ function SliderRow() {
     }
     const timer = setTimeout(() => {
       dispath(setFeature(movie))
+      togglePlaying()
     }, 2000)
     setTimeOutId(timer)
   }

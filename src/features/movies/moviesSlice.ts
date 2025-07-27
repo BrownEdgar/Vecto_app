@@ -44,8 +44,6 @@ export const moviesSlice = createMoviesSlice({
     ),
     setFeature: create.reducer(
       (state, action: PayloadAction<IMovieFeatured>) => {
-        console.log("actionP", action.payload);
-
         state.data.Featured = action.payload;
       }
     )

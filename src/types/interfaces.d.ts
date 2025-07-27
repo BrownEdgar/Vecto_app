@@ -17,7 +17,7 @@ export interface IMovieTrending extends IMovieFeatured {
 }
 
 export interface IFetchMoviesResponse {
-  Featured?: IMovieFeatured;
+  Featured?: IMovieFeatured | IMovieTrending;
   TendingNow?: IMovieTrending[];
 }
 
