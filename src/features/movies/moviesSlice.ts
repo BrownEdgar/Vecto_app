@@ -61,7 +61,6 @@ export const moviesSlice = createMoviesSlice({
   },
 })
 
-export const { getAllMovies, getFeaturedMovie, getTrendingMovies } =
-  moviesSlice.selectors
+export const { getAllMovies, getFeaturedMovie, getTrendingMovies } = moviesSlice.selectors
 export const { fetchTodo, setFeature } = moviesSlice.actions
 export default moviesSlice.reducer

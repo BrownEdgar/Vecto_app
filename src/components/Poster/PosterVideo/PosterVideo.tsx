@@ -15,9 +15,9 @@ export default function PosterVideo({
 }: PosterVideoProps) {
   if (!isPlaying || !videoUrl) return null
   return (
-    <div className={`PosterVideo${!isPlaying ? ' PosterVideoVideo-hide' : ''}`}>
+    <div className={`PosterVideo ${!isPlaying ? 'PosterVideoVideo-hide' : ''}`}>
       <div className="PosterVideo__fon"></div>
-      <video className={`PosterVideo__box `} ref={videoRef} autoPlay muted>
+      <video className={`PosterVideo__box`} ref={videoRef} autoPlay muted>
         <source src={videoUrl} type="video/mp4" />
       </video>
     </div>

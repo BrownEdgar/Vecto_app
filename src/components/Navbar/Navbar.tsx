@@ -15,7 +15,8 @@ const Navbar = ({ toggleNavbar, setToggleNavbar }: INavbar) => {
     setActiveItem(label)
   }
 
-  const navbarRef = useRef<HTMLDivElement | null>(null)
+  const navbarRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const navbarWrapper = navbarRef.current
     const handleClick = (e: MouseEvent) => {
@@ -51,7 +52,9 @@ const Navbar = ({ toggleNavbar, setToggleNavbar }: INavbar) => {
             <div
               key={link.label}
               className={`
-              nav__item  ${activeItem === link.label ? 'nav__item-active' : ''} ${!toggleNavbar ? 'nav__item-circle' : ''}
+              nav__item  
+              ${activeItem === link.label ? 'nav__item-active' : ''} 
+              ${!toggleNavbar ? 'nav__item-circle' : ''}
             `}
               onClick={() => handleSwitchMenu(link.label)}
             >

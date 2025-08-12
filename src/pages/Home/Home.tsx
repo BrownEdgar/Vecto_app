@@ -40,7 +40,7 @@ export default function Home() {
           videoRef={videoRef}
           togglePlaying={togglePlaying}
         />
-        <SliderRow togglePlaying={togglePlaying} isPlaying={isPlaying} />
+        <SliderRow togglePlaying={togglePlaying} isPlaying={isPlaying} toggleNavbar={toggleNavbar} />
       </main>
     </div>
   )

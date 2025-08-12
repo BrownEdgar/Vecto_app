@@ -6,10 +6,11 @@ import { IMovieFeatured } from '@/types'
 
 interface ISliderRowProps {
   togglePlaying: () => void
-  isPlaying: boolean
+  isPlaying: boolean,
+  toggleNavbar: boolean
 }
 
-function SliderRow({ togglePlaying, isPlaying }: ISliderRowProps) {
+function SliderRow({ togglePlaying, isPlaying, toggleNavbar }: ISliderRowProps) {
   const trandingMovies = useAppSelector(getTrendingMovies)
   const dispath = useAppDispatch()
   const [timeOutId, setTimeOutId] = useState<ReturnType<
@@ -50,13 +51,14 @@ function SliderRow({ togglePlaying, isPlaying }: ISliderRowProps) {
   }
 
   return (
-    <div className="row">
+    <div className="row" style={{ marginLeft: `${toggleNavbar ? "230px" : "100px"} ` }}>
       <div className="row__posters" ref={elRef}>
         {trandingMovies?.map((movie) => {
           return (
             <img
               className="row__poster"
               key={movie.Id}
+              draggable={false}
               onClick={() => changePoster(movie)}
               src={`images/${movie.CoverImage}`}
               alt={movie?.Title}
